@@ -1,13 +1,181 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.main-component{
+  background-image: url('./images/avax-globe.jpeg');
+  background-size: cover;
+  background-position: bottom;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-component-inner {
+  background: linear-gradient(to bottom, rgba(0,0,0,.75), rgba(0,0,0,.2));
+}
+
+.landing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px rgba(0,0,0,.5);
+}
+
+.coin-description-short{
+  text-align: left;
+  font-size: .7rem;
+  margin: .25rem 0.5rem;
+}
+
+.coin-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.coin-info-symbol, .coin-info-price{
+  margin: 0 0.5rem;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.name-and-price{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.coin-info h1{
+  margin: .5rem .5rem 0 ; 
+}
+
+.ath-hide, .atl-hide{
+  display: none;
+}
+
+.ath, .atl {
+  margin: 1rem;
+}
+.ath:hover + .ath-hide, .atl:hover + .atl-hide{
+  display: block;
+  margin: 1rem;
+}
+
+
+.coin-price_change_percentage_table{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 0;
+  margin: 1rem 0;
+  font-size: .8rem;
+
+  color: white;
+  text-shadow: 2px 2px rgba(0,0,0, .5);
+
+  background-color: rgba(0,0,0, .8);
+}
+
+.coin-price_change_percentage_table div{
+  /* padding: .05em; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.coin-market-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+
+.market-cap {
+  background-color: rgb(0, 0, 0, .7);
+  font-weight: 900;
+  border-radius: 25px;
+  margin: .5rem 0;
+  padding: 0 .5rem;
+  width: 44%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.fully-diluted-market {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(252, 252, 252, 0.7);
+  font-weight: 900;
+  border-radius: 25px;
+  margin: .5rem 0;
+  padding: 0 .5rem;
+  width: 44%;
+  text-shadow: 1px 1px rgb(0, 0, 0, .3);
+}
+
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  margin: 1rem 1.5rem;
+  /* color: white; */
+  text-shadow: 1px 1px rgba(0,0,0, .2);
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  padding: 0 .5rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 .5rem;
+  color: white;
+  text-shadow: 2px 2px rgba(0,0,0, .5);
+}
+
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  margin: 1rem;
+}
+
+.contact-links p {
+  margin: .5rem;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+.metamask-icon{
+  width: 3rem;
+}
+
+.metamask-button {
+  background-color: none;
+  border: none;
+  margin: none;
+}
+
+.metamask-button:hover {
+  cursor: pointer;
 }
